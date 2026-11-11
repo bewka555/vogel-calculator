@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>คำนวณค่าขนส่งด้วยวิธี Vogel (VAM)</title>
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h1>คำนวณค่าขนส่งด้วยวิธี Vogel</h1>
+<p class="lead" id="ld"></p>
+
+<section>
+<h2>1. ข้อมูลนำเข้า</h2>
+<div class="mode" role="group" aria-label="เลือกสิ่งที่ต้องการหา"><span>ต้องการหา:</span><button id="mMin" class="p" aria-pressed="true">ต้นทุนรวมต่ำสุด</button><button id="mMax" aria-pressed="false">กำไรรวมสูงสุด</button></div>
+<p class="hint" id="hn"></p>
+<div class="sc" id="ed"></div>
+<div class="bar"><button id="aS">+ ต้นทาง</button><button id="aD">+ ปลายทาง</button><button id="rs">ล้างค่าเป็น 0</button></div>
+</section>
+
+<section>
+<h2>2. ขั้นตอนการคำนวณ</h2>
+<div id="nt"></div>
+<div class="bar"><button id="pv">ก่อนหน้า</button><input type="range" id="sl" min="0" value="0"><button id="nx" class="p">ถัดไป</button><span id="sn"></span></div>
+<p id="ex"></p>
+<div class="sc" id="gr"></div>
+</section>
+
+<section>
+<h2>3. ผลลัพธ์</h2>
+<div class="sc" id="rt"></div>
+<p id="rl"></p>
+<div class="tot" id="tt"></div>
+<div class="fm" id="fm"></div>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
