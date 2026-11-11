@@ -1,2 +1,0 @@
-# vogel-calculator
-vogel-calculator
